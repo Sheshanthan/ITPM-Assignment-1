@@ -20,7 +20,7 @@ Before running the tests, ensure you have the following installed:
    ```bash
    git clone https://github.com/Sheshanthan/ITPM-Assignment-1.git
 
-2 Navigate to the project directory:cd 
+2 Navigate to the project directory:cd ITPM-Assignment-1
 
 3 Install necessary dependencies:npm install
 
