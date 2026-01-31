@@ -8,41 +8,40 @@ test.describe('Positive Functional Tests - Singlish to Sinhala', () => {
 
   // Positive Test Cases List
   const testScenarios = [
-    { id: 'Pos_Fun_0001', input: 'aayubovan!', expected: 'ආයුබොවන්!' },
-    { id: 'Pos_Fun_0002', input: 'mama adha gedhara enavaa. ', expected: 'මම අද ගෙදර එනවා. ' },
-    { id: 'Pos_Fun_0003', input: 'heta udhaeesana vaahanaya enavaa.', expected: 'හෙට උදෑසන වාහනය එනවා. ' },
-    { id: 'Pos_Fun_0004', input: 'poddak inna, mama enakal.', expected: 'පොඩ්ඩක් ඉන්න, මම එනකල්.' },
-    { id: 'Pos_Fun_0005', input: 'vaedak karanna epaa.', expected: 'වැඩක් කරන්න එපා.' },
-    { id: 'Pos_Fun_0006', input: 'api anidhdhaa enavaa. ', expected: 'අපි අනිද්දා එනවා. ' },
-    { id: 'Pos_Fun_0007', input: 'mata NIC eka mathaka naehae.', expected: 'මට NIC එක මතක නැහැ.' },
-    { id: 'Pos_Fun_0008', input: 'paasala nivaadu nisaa api gamata yamu.', expected: 'පාසල නිවාඩු නිසා අපි ගමට යමු.' },
-    { id: 'Pos_Fun_0009', input: 'Zoom meeting eka 11ta thiyenne.', expected: 'Zoom meeting එක 11ට තියෙන්නෙ.' },
-    { id: 'Pos_Fun_0010', input: 'Rs. 1500k dhiilaa badu gaththaa.', expected: 'Rs. 1500ක් දීලා බඩු ගත්තා.' },
-    { id: 'Pos_Fun_0011', input: 'oyaage phone number eka dhenna.', expected: 'ඔයාගෙ phone number එක දෙන්න.' },
-    { id: 'Pos_Fun_0012', input: 'bus booking system eka vaeda.', expected: 'bus booking system එක වැඩ.' },
+    { id: 'Pos_Fun_0001', input: 'subha udhaeesanak!', expected: 'සුභ උදෑසනක්!' },
+    { id: 'Pos_Fun_0002', input: 'mata kaeema dhennavaa. ', expected: 'මට කෑම දෙන්නවා. ' },
+    { id: 'Pos_Fun_0003', input: 'daruvaa paasel yanavaa.', expected: 'දරුවා පාසැල් යනවා. ' },
+    { id: 'Pos_Fun_0004', input: 'oyaa kohed innee?', expected: 'ඔයා කොහෙද ඉන්නේ?' },
+    { id: 'Pos_Fun_0005', input: 'mama ithee gedher hithiye.', expected: 'මම ඉතිරි ගෙදර හිටියේ.' },
+    { id: 'Pos_Fun_0006', input: 'yaluvo, vataa yannavaa! ', expected: 'යාළුවෝ, වටා යන්නවා! ' },
+    { id: 'Pos_Fun_0007', input: 'mama paasel yanavaa saha passe gedhara enavaa.', expected: 'මම පාසැල් යනවා සහ පස්සෙ ගෙදර එනවා.' },
+    { id: 'Pos_Fun_0008', input: 'mama haethaya thunaka vataa yannavaa.', expected: 'මම හෙතය තුනක් වටා යනවා.' },
+    { id: 'Pos_Fun_0009', input: 'karunaakara potak dhennako.', expected: 'කරුණාකර පොතක් දෙන්නකෝ.' },
+    { id: 'Pos_Fun_0010', input: 'ammaa saha thaththaa rashaye innava.', expected: 'අම්මා සහ තත්තා රාශයෙ ඉන්නවා.' },
+    { id: 'Pos_Fun_0011', input: 'adha vaasseyi, mama uda yannavaa neehey.', expected: 'අද වැස්සයි, මම උදා යන්නවා නෑහේ.' },
+    { id: 'Pos_Fun_0012', input: 'heta maaligaavata yanavaa.', expected: 'හෙට මාලිගාවට යනවා.' },
 
     // ✅ updated expected to match actual output (no ending ".")
     {
       id: 'Pos_Fun_0013',
-      input: 'lankavee dheesaguna dheparththumenthuva pavasanne adha rathri kaalayeedhi dhivayinee bohoo pradheesha khipayakata thadha vaesi aethiviya haeki bavayi. visheeshayenma basnaahira saha sabaragamuva palathvala minissu praveesham viya yuthuyi',
-      expected: 'ලන්කවේ දේසගුන දෙපර්ත්තුමෙන්තුව පවසන්නෙ අද රත්‍රි කාලයේදි දිවයිනේ බොහෝ ප්‍රදේශ ක්හිපයකට තද වැසි ඇතිවිය හැකි බවයි. විශේශයෙන්ම බස්නාහිර සහ සබරගමුව පලත්වල මිනිස්සු ප්‍රවේශම් විය යුතුයි'
+      input: 'ee seellama rathu varnayee.',
+      expected: 'ඒ සෙල්ලම රතු වර්ණයී'
     },
 
-    { id: 'Pos_Fun_0014', input: 'oyaage time table eka mata dhenna', expected: 'ඔයාගෙ time table එක මට දෙන්න' },
-    { id: 'Pos_Fun_0015', input: 'mama 30 kg barayi', expected: 'මම 30 kg බරයි' },
-    { id: 'Pos_Fun_0016', input: '12/05/2026 kiyanne mage birthday eka', expected: '12/05/2026 කියන්නෙ mage birthday එක' },
-    { id: 'Pos_Fun_0017', input: 'maamaa kaeema eka kaevaadha?', expected: 'මාමා කෑම එක කැවාද?' },
-    { id: 'Pos_Fun_0018', input: 'adha meyalage kaeema hari rahayi.', expected: 'අද මෙයලගෙ කෑම හරි රහයි.' },
-    { id: 'Pos_Fun_0019', input: 'karunaakarala mata udhav karanna.', expected: 'කරුනාකරල මට උදව් කරන්න.' },
-    { id: 'Pos_Fun_0020', input: 'oyaage yaaluvaata kohomadha?', expected: 'ඔයාගෙ යාලුවාට කොහොමද?' },
-    { id: 'Pos_Fun_0021', input: 'poth kiyavanna mama aasayi.', expected: 'පොත් කියවන්න මම ආසයි.' },
-    { id: 'Pos_Fun_0022', input: 'oyaa vahaama enna.', expected: 'ඔයා වහාම එන්න.' },
+    { id: 'Pos_Fun_0014', input: 'api basse gedher yannavaa.', expected: 'අපි බස්සෙ ගෙදර යනවා.' },
+    { id: 'Pos_Fun_0015', input: 'mama hari santhosheyi!', expected: 'මම හරි සන්තෝෂෙයි!' },
+    { id: 'Pos_Fun_0016', input: 'mama puththu kreedaava kaleemi utsahayeyi.', expected: 'මම පුත්තු ක්‍රීඩාව කලීමි උත්සහයෙයි.' },
+    { id: 'Pos_Fun_0017', input: 'kadheta gihilla paalang gannavaa.', expected: 'කදෙට ගිහිල්ල පාලන්ග ගන්නවා.' },
+    { id: 'Pos_Fun_0018', input: 'oyaata suvapaththi hondhadha?', expected: 'ඔයාට සුවපත්ති හොන්දහ?' },
+    { id: 'Pos_Fun_0019', input: 'mata aluth sellameyka thiyenavaa.', expected: 'මට අලුත් සෙල්ලමෙයි තියෙනවා.' },
+    { id: 'Pos_Fun_0020', input: 'vaassenama, mama gede hitinnavaa.', expected: 'වස්සෙනම, මම ගෙදෙ හිටිනවා.' },
+    { id: 'Pos_Fun_0021', input: 'mama annaava kanna kaemaththi neehey.', expected: 'මම ආන්නාව කන්න කැමති නෑහේ.' },
+    { id: 'Pos_Fun_0022', input: 'uthuraatai yanavaa, passe vamatai aeravaa.', expected: 'උතුරාට යනවා, පස්සෙ වමට ආරවා.' },
 
     // ✅ updated expected to match actual output ("mat" stays)
-    { id: 'Pos_Fun_0023', input: 'mat aoyaagen  udhavvak karaganna puLuvandha? ', expected: 'mat අඔයාගෙන්  උදව්වක් කරගන්න පුළුවන්ද? ' },
+    { id: 'Pos_Fun_0023', input: 'mama isaella paasal yanavaa, anuva mama yaaluvo ekka kreeda karanavaa, saha raathreeyeta gedher enavaa. ', expected: 'මම ඉසැල්ල පාසැල් යනවා, අනුව මම යාලුවෝ එකක් ක්‍රීඩා කරනවා, සහ රත්‍රියට ගෙදර එනවා. ' },
 
-    { id: 'Pos_Fun_0024', input: 'ow, mama balannam.', expected: 'ow, මම බලන්නම්.' },
-    { id: 'Pos_Fun_0025', input: 'samaavenna, eeka maage athvaeradhiimak.', expected: 'සමාවෙන්න, ඒක මාගෙ අත්වැරදීමක්.' },
+    { id: 'Pos_Fun_0024', input: 'adha mama udhaeesane udasaa una, passe naan kaalaa, aanduva kaeemaa una saha raathreeya TV balaa, passe nidhaa gaththaa.', expected: 'අද මම උදෑසනෙ උදසා එකා, පස්සෙ නාන් කාලා, ආඩුව කෑමා එකා සහ රත්‍රියට TV බලා, පස්සෙ නිධාගත්තා.' },
   ];
 
   //for loop
