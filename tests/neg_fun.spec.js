@@ -9,16 +9,16 @@ test.describe('Negative Functional Tests - Singlish to Sinhala Robustness', () =
 
   // Negative Test Cases List
   const negativeScenarios = [
-    { id: 'Neg_Fun_0001', input: 'karyaalayayenlaebunulipinayaaeththatamamatalaebunenaehae', expected: 'කර්යාලයයෙන් ලැබුනු ලිපිනය ඇත්තටම මට ලැබුනෙ නැහැ' },
-    { id: 'Neg_Fun_0002', input: 'vaessaathapiyamu kandy trip eka yanna.', expected: 'වැස්සත් අපි යමු මහනුවර ට්‍රිප් එක යන්න.' },
-    { id: 'Neg_Fun_0003', input: 'shreemathvibhagaya pass kalla pvt job eka set.', expected: 'ශ්‍රීමත් විභාගය පාස් කරලා ප්‍රයිවට් ජොබ් එක සෙට්.' },
-    { id: 'Neg_Fun_0004', input: 'mama g@dhara y@n@vaa', expected: 'මම ගෙදර යනවා' },
-    { id: 'Neg_Fun_0005', input: 'mamaayethiiye kiyawapu pothha hoda nae.', expected: 'මම ආයෙත් ඊයේ කියවපු පොත හොඳ නෑ' },
-    { id: 'Neg_Fun_0006', input: 'Teamsmeetingekee linkeka WhatsAppkarannapuluwanda?', expected: 'ටීම්ස් මීටින් එකේ ලින්ක් එක වට්සැප් කරන්න පුළුවන්ද?' },
-    { id: 'Neg_Fun_0007', input: 'Rs.5343kapariganakaya mila adhikaivagee.', expected: 'රු. 5343 ක පරිගණකය මිල අධිකයි වගේ.' },
-    { id: 'Neg_Fun_0008', input: 'dhesaembar25ta colombo yanavaa kiyahankoo.', expected: 'දෙසැම්බර් 25 ට කොළඹ යනවා කියහන්කෝ.' },
+    { id: 'Neg_Fun_0001', input: 'mama ගෙදර yanavaa.', expected: 'මම ගෙදර යනවා.' },
+    { id: 'Neg_Fun_0002', input: '', expected: '' },
+    { id: 'Neg_Fun_0003', input: '@#$%^&*()!', expected: '@#$%^&*()!' },
+    { id: 'Neg_Fun_0004', input: 'mama mama mama mama mama mama mama mama mama mama mama mama mama mama mama yanavaa', expected: 'මම මම මම මම මම මම මම මම මම මම මම මම මම මම මම මම යනවා' },
+    { id: 'Neg_Fun_0005', input: '12345678', expected: '12345678' },
+    { id: 'Neg_Fun_0006', input: 'hello world', expected: 'හෙල්ලෝ වෝර්ල්ඩ්' },
+    { id: 'Neg_Fun_0007', input: 'mmm gggddr ynvvv', expected: 'ම්ම්ම් ග්ග්ග්ද්ද්ර් ය්න්ව්ව්ව්' },
+    { id: 'Neg_Fun_0008', input: '<script>alert(test)/script', expected: '<script>alert(test)/script' },
     { id: 'Neg_Fun_0009', input: '7.30AMta karala office eken off wenna ona.', expected: '7.30 ට කරලා ඔෆිස් එකෙන් off වෙන්න ඕන.' },
-    { id: 'Neg_Fun_0010', input: 'adhapaasalyanneevaeenekee trafficnisaa.', expected: 'අද පාසල් යන්නේ නෑ ඒකේ ට්‍රැෆික් නිසා' },
+    { id: 'Neg_Fun_0010', input: 'mama 你好 yanavaa', expected: 'මම 你好 යනවා' },
   ];
 
   for (const scenario of negativeScenarios) {
